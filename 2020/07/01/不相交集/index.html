@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+  <meta name="description" content="等价关系与等价类关系R集合中的每对元素(a,b), aRb非真即假. 等价关系 自反性 对称性 传递性表示等价关系1.直接暴力N个元素，用N×N布尔数组表示等价关系R.  优势：常量时间测试a,b关系. 问题：   空间浪费. 维护麻烦，增加一对关系需要修改很多布尔量. 2.等价类  不相交集find返回等价类名字. union用于添加关系. 实现存储顺序表存储也可想成树高为0，每个节点都直接挂在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="不相交集">
+<meta property="og:url" content="http://yoursite.com/2020/07/01/%E4%B8%8D%E7%9B%B8%E4%BA%A4%E9%9B%86/index.html">
 <meta property="og:site_name" content="Wonderland">
+<meta property="og:description" content="等价关系与等价类关系R集合中的每对元素(a,b), aRb非真即假. 等价关系 自反性 对称性 传递性表示等价关系1.直接暴力N个元素，用N×N布尔数组表示等价关系R.  优势：常量时间测试a,b关系. 问题：   空间浪费. 维护麻烦，增加一对关系需要修改很多布尔量. 2.等价类  不相交集find返回等价类名字. union用于添加关系. 实现存储顺序表存储也可想成树高为0，每个节点都直接挂在">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-01T07:33:51.000Z">
-<meta property="article:modified_time" content="2020-07-01T07:34:17.247Z">
+<meta property="article:published_time" content="2020-07-01T13:50:22.000Z">
+<meta property="article:modified_time" content="2020-07-01T14:25:49.925Z">
 <meta property="article:author" content="Alice Wan">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/categories/">
+<link rel="canonical" href="http://yoursite.com/2020/07/01/%E4%B8%8D%E7%9B%B8%E4%BA%A4%E9%9B%86/">
 
 
 <script id="page-configurations">
@@ -38,13 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>categories | Wonderland
-</title>
+  <title>不相交集 | Wonderland</title>
   
 
 
@@ -151,51 +152,122 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="en">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/01/%E4%B8%8D%E7%9B%B8%E4%BA%A4%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Alice Wan">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wonderland">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          不相交集
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-<div class="post-meta">
+              <time title="Created: 2020-07-01 21:50:22 / Modified: 22:25:49" itemprop="dateCreated datePublished" datetime="2020-07-01T21:50:22+08:00">2020-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/07/01/%E4%B8%8D%E7%9B%B8%E4%BA%A4%E9%9B%86/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/01/不相交集/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
   
 
-</div>
+        </div>
+      </header>
 
-</header>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      
-      
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              3 categories in total
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Questions/">Questions</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a><span class="category-list-count">3</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
+        <h1 id="等价关系与等价类"><a href="#等价关系与等价类" class="headerlink" title="等价关系与等价类"></a>等价关系与等价类</h1><h2 id="关系R"><a href="#关系R" class="headerlink" title="关系R"></a>关系R</h2><p>集合中的每对元素(a,b), aRb非真即假.</p>
+<h2 id="等价关系"><a href="#等价关系" class="headerlink" title="等价关系"></a>等价关系</h2><ol>
+<li>自反性</li>
+<li>对称性</li>
+<li>传递性<h3 id="表示等价关系"><a href="#表示等价关系" class="headerlink" title="表示等价关系"></a>表示等价关系</h3><h4 id="1-直接暴力"><a href="#1-直接暴力" class="headerlink" title="1.直接暴力"></a>1.直接暴力</h4>N个元素，用N×N布尔数组表示等价关系R.</li>
+</ol>
+<p>优势：常量时间测试a,b关系.</p>
+<p>问题： </p>
+<ol>
+<li>空间浪费.</li>
+<li>维护麻烦，增加一对关系需要修改很多布尔量. <h4 id="2-等价类"><a href="#2-等价类" class="headerlink" title="2.等价类"></a>2.等价类</h4></li>
+</ol>
+<h1 id="不相交集"><a href="#不相交集" class="headerlink" title="不相交集"></a>不相交集</h1><h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><p>返回等价类名字.</p>
+<h2 id="union"><a href="#union" class="headerlink" title="union"></a>union</h2><p>用于添加关系.</p>
+<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><h2 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h2><h3 id="顺序表存储"><a href="#顺序表存储" class="headerlink" title="顺序表存储"></a>顺序表存储</h3><p>也可想成树高为0，每个节点都直接挂在特殊值上<br>查找：O(1)<br>归并：O(N)</p>
+<h3 id="树存储"><a href="#树存储" class="headerlink" title="树存储"></a>树存储</h3><p>查找：O(lgN)<br>树高对数</p>
+<p>归并：O(1)</p>
+
     </div>
-    
 
     
     
     
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/01/First-Blog/" rel="prev" title="First Blog">
+      <i class="fa fa-chevron-left"></i> First Blog
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/01/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" rel="next" title="最小生成树">
+      最小生成树 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
 
 
           </div>
@@ -253,6 +325,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#等价关系与等价类"><span class="nav-number">1.</span> <span class="nav-text">等价关系与等价类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关系R"><span class="nav-number">1.1.</span> <span class="nav-text">关系R</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等价关系"><span class="nav-number">1.2.</span> <span class="nav-text">等价关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表示等价关系"><span class="nav-number">1.2.1.</span> <span class="nav-text">表示等价关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-直接暴力"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">1.直接暴力</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-等价类"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">2.等价类</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#不相交集"><span class="nav-number">2.</span> <span class="nav-text">不相交集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#find"><span class="nav-number">2.1.</span> <span class="nav-text">find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#union"><span class="nav-number">2.2.</span> <span class="nav-text">union</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现"><span class="nav-number">3.</span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#存储"><span class="nav-number">3.1.</span> <span class="nav-text">存储</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#顺序表存储"><span class="nav-number">3.1.1.</span> <span class="nav-text">顺序表存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#树存储"><span class="nav-number">3.1.2.</span> <span class="nav-text">树存储</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -386,9 +459,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "http://yoursite.com/categories/index.html";
-    this.page.identifier = "categories/index.html";
-    this.page.title = "categories";
+    this.page.url = "http://yoursite.com/2020/07/01/%E4%B8%8D%E7%9B%B8%E4%BA%A4%E9%9B%86/";
+    this.page.identifier = "2020/07/01/不相交集/";
+    this.page.title = "不相交集";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
