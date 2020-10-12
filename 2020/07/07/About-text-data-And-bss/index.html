@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wonderland">
-<meta property="og:url" content="http://yoursite.com/archives/2020/07/index.html">
+  <meta name="description" content="可执行程序文件结构一个可执行的程序文件，结构分三部分.  可执行程序文件结构 .text .data .bss   堆，栈 .stack .heap.text代码段，用来存放代码，一般只读..data数据段，用来存放全局初始化变量，常量，以及全局或局部静态(static)变量，只初始化一次.bssBSS段，用来存放全局未初化数据，用0初始化.    堆，栈程序在执行时,会产生临时变量或是函数返回值">
+<meta property="og:type" content="article">
+<meta property="og:title" content="About &#39;.text&#39;, &#39;.data&#39; And &#39;.bss&#39;">
+<meta property="og:url" content="http://yoursite.com/2020/07/07/About-text-data-And-bss/index.html">
 <meta property="og:site_name" content="Wonderland">
+<meta property="og:description" content="可执行程序文件结构一个可执行的程序文件，结构分三部分.  可执行程序文件结构 .text .data .bss   堆，栈 .stack .heap.text代码段，用来存放代码，一般只读..data数据段，用来存放全局初始化变量，常量，以及全局或局部静态(static)变量，只初始化一次.bssBSS段，用来存放全局未初化数据，用0初始化.    堆，栈程序在执行时,会产生临时变量或是函数返回值">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-07T14:32:37.000Z">
+<meta property="article:modified_time" content="2020-07-08T02:58:09.584Z">
 <meta property="article:author" content="Alice Wan">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/2020/07/">
+<link rel="canonical" href="http://yoursite.com/2020/07/07/About-text-data-And-bss/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | Wonderland</title>
+  <title>About '.text', '.data' And '.bss' | Wonderland</title>
   
 
 
@@ -149,216 +153,134 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/07/About-text-data-And-bss/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Alice Wan">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wonderland">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          About '.text', '.data' And '.bss'
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-07-07 22:32:37" itemprop="dateCreated datePublished" datetime="2020-07-07T22:32:37+08:00">2020-07-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-08 10:58:09" itemprop="dateModified" datetime="2020-07-08T10:58:09+08:00">2020-07-08</time>
+              </span>
+
+          
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 10 posts in total. Keep on posting.</span>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/07/07/About-text-data-And-bss/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/07/About-text-data-And-bss/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-28T23:23:18+08:00"
-              content="2020-07-28">
-          07-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/28/QT/" itemprop="url">
-            <span itemprop="name">QT</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-25T14:46:53+08:00"
-              content="2020-07-25">
-          07-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/25/23rdJuly,2020/" itemprop="url">
-            <span itemprop="name">23rdJuly,2020</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-23T14:33:24+08:00"
-              content="2020-07-23">
-          07-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/23/Tips/" itemprop="url">
-            <span itemprop="name">Tips</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-13T13:14:16+08:00"
-              content="2020-07-13">
-          07-13
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/13/About-CMakeLists-txt/" itemprop="url">
-            <span itemprop="name">About 'CMakeLists.txt'</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-07T22:32:37+08:00"
-              content="2020-07-07">
-          07-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/07/About-text-data-And-bss/" itemprop="url">
-            <span itemprop="name">About '.text', '.data' And '.bss'</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-07T22:25:25+08:00"
-              content="2020-07-07">
-          07-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/07/%E6%AE%B5/" itemprop="url">
-            <span itemprop="name">段</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-07T21:33:57+08:00"
-              content="2020-07-07">
-          07-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/07/Input-And-Output/" itemprop="url">
-            <span itemprop="name">Input And Output</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-01T23:15:56+08:00"
-              content="2020-07-01">
-          07-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/01/Mardown%E8%AF%AD%E6%B3%95/" itemprop="url">
-            <span itemprop="name">Mardown语法</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-01T22:27:03+08:00"
-              content="2020-07-01">
-          07-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/01/Questions/" itemprop="url">
-            <span itemprop="name">1    1q'q's'd'fa'r'd's'f'r'h</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="可执行程序文件结构"><a href="#可执行程序文件结构" class="headerlink" title="可执行程序文件结构"></a>可执行程序文件结构</h1><p>一个可执行的程序文件，结构分三部分.</p>
+<ul>
+<li><a href="#可执行程序文件结构">可执行程序文件结构</a><ul>
+<li><a href="#text">.text</a></li>
+<li><a href="#data">.data</a></li>
+<li><a href="#bss">.bss</a></li>
+</ul>
+</li>
+<li><a href="#堆栈">堆，栈</a><ul>
+<li><a href="#stack">.stack</a></li>
+<li><a href="#heap">.heap</a><h2 id="text"><a href="#text" class="headerlink" title=".text"></a>.text</h2>代码段，用来存放代码，一般只读.<h2 id="data"><a href="#data" class="headerlink" title=".data"></a>.data</h2>数据段，用来存放全局初始化变量，常量，以及全局或局部静态(static)变量，只初始化一次<h2 id="bss"><a href="#bss" class="headerlink" title=".bss"></a>.bss</h2>BSS段，用来存放全局未初化数据，用0初始化.</li>
+</ul>
+</li>
+</ul>
+<h1 id="堆，栈"><a href="#堆，栈" class="headerlink" title="堆，栈"></a>堆，栈</h1><p>程序在执行时,会产生临时变量或是函数返回值,</p>
+<p>还有函数中动态分配的地址空间,如malloc, new等…</p>
+<p>根据这些需求,才需要堆和栈的出现,</p>
+<p>所以堆(heap)和栈(Stack)这两个段是在程序运行时才有.</p>
+<h2 id="stack"><a href="#stack" class="headerlink" title=".stack"></a>.stack</h2><p>栈区,用来存放局部变量,函数的参数,返回值等,由编译器自动分配释放;</p>
+<p>栈的概念来自数据结构,栈只能在一端操作,所以先入栈的后出,“先进后出”,这种结构保护之前的现场,如一个函数被调用后,产生的临时变量都会存到栈区的顶部,当函数完成后,会自动从顶部将刚使用的数据销毁;另外栈区的地址是从高地址向下增长的;</p>
+<h2 id="heap"><a href="#heap" class="headerlink" title=".heap"></a>.heap</h2><p> 堆区,用来动态内存分配,如malloc, new申请的内存,由程序员分配释放;</p>
+<p>程序中不释放,则程序结束时,由OS回收;据说这个和数据结构中的堆 没有什么关系;堆区使用时地址向上增长;</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/07/%E6%AE%B5/" rel="prev" title="段">
+      <i class="fa fa-chevron-left"></i> 段
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/13/About-CMakeLists-txt/" rel="next" title="About 'CMakeLists.txt'">
+      About 'CMakeLists.txt' <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -405,6 +327,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#可执行程序文件结构"><span class="nav-number">1.</span> <span class="nav-text">可执行程序文件结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#text"><span class="nav-number">1.1.</span> <span class="nav-text">.text</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#data"><span class="nav-number">1.2.</span> <span class="nav-text">.data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bss"><span class="nav-number">1.3.</span> <span class="nav-text">.bss</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#堆，栈"><span class="nav-number">2.</span> <span class="nav-text">堆，栈</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stack"><span class="nav-number">2.1.</span> <span class="nav-text">.stack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#heap"><span class="nav-number">2.2.</span> <span class="nav-text">.heap</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -535,6 +458,26 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2020/07/07/About-text-data-And-bss/";
+    this.page.identifier = "2020/07/07/About-text-data-And-bss/";
+    this.page.title = "About '.text', '.data' And '.bss'";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://Alice-182.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
 </script>
 
 </body>
