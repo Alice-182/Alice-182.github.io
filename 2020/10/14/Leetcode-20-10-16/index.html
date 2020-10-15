@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wonderland">
-<meta property="og:url" content="http://yoursite.com/tags/Markdown/index.html">
+  <meta name="description" content="56. Merge Intervals62. Unique Paths64. Minimum Path Sum70. Climbing Stairs72. Edit Distance75. Sort Colors76. Minimum Window Substring78. Subsets79. Word Search84. Largest Rectangle in Histogram">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leetcode 20&#x2F;10&#x2F;16">
+<meta property="og:url" content="http://yoursite.com/2020/10/14/Leetcode-20-10-16/index.html">
 <meta property="og:site_name" content="Wonderland">
+<meta property="og:description" content="56. Merge Intervals62. Unique Paths64. Minimum Path Sum70. Climbing Stairs72. Edit Distance75. Sort Colors76. Minimum Window Substring78. Subsets79. Word Search84. Largest Rectangle in Histogram">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-14T12:05:22.000Z">
+<meta property="article:modified_time" content="2020-10-14T12:08:05.951Z">
 <meta property="article:author" content="Alice Wan">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/tags/Markdown/">
+<link rel="canonical" href="http://yoursite.com/2020/10/14/Leetcode-20-10-16/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Tag: Markdown | Wonderland</title>
+  <title>Leetcode 20/10/16 | Wonderland</title>
   
 
 
@@ -149,57 +153,103 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/14/Leetcode-20-10-16/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Alice Wan">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wonderland">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Leetcode 20/10/16
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-10-14 20:05:22 / Modified: 20:08:05" itemprop="dateCreated datePublished" datetime="2020-10-14T20:05:22+08:00">2020-10-14</time>
+            </span>
+
+          
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Markdown
-          <small>Tag</small>
-        </h2>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/10/14/Leetcode-20-10-16/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/10/14/Leetcode-20-10-16/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <h1 id="56-Merge-Intervals"><a href="#56-Merge-Intervals" class="headerlink" title="56. Merge Intervals"></a>56. Merge Intervals</h1><h1 id="62-Unique-Paths"><a href="#62-Unique-Paths" class="headerlink" title="62. Unique Paths"></a>62. Unique Paths</h1><h1 id="64-Minimum-Path-Sum"><a href="#64-Minimum-Path-Sum" class="headerlink" title="64. Minimum Path Sum"></a>64. Minimum Path Sum</h1><h1 id="70-Climbing-Stairs"><a href="#70-Climbing-Stairs" class="headerlink" title="70. Climbing Stairs"></a>70. Climbing Stairs</h1><h1 id="72-Edit-Distance"><a href="#72-Edit-Distance" class="headerlink" title="72. Edit Distance"></a>72. Edit Distance</h1><h1 id="75-Sort-Colors"><a href="#75-Sort-Colors" class="headerlink" title="75. Sort Colors"></a>75. Sort Colors</h1><h1 id="76-Minimum-Window-Substring"><a href="#76-Minimum-Window-Substring" class="headerlink" title="76. Minimum Window Substring"></a>76. Minimum Window Substring</h1><h1 id="78-Subsets"><a href="#78-Subsets" class="headerlink" title="78. Subsets"></a>78. Subsets</h1><h1 id="79-Word-Search"><a href="#79-Word-Search" class="headerlink" title="79. Word Search"></a>79. Word Search</h1><h1 id="84-Largest-Rectangle-in-Histogram"><a href="#84-Largest-Rectangle-in-Histogram" class="headerlink" title="84. Largest Rectangle in Histogram"></a>84. Largest Rectangle in Histogram</h1>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-01T23:15:56+08:00"
-              content="2020-07-01">
-          07-01
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/01/Mardown%E8%AF%AD%E6%B3%95/" itemprop="url">
-            <span itemprop="name">Mardown语法</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/14/Leetcode-20-10-15/" rel="prev" title="Leetcode 20/10/15">
+      <i class="fa fa-chevron-left"></i> Leetcode 20/10/15
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -246,6 +296,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#56-Merge-Intervals"><span class="nav-number">1.</span> <span class="nav-text">56. Merge Intervals</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#62-Unique-Paths"><span class="nav-number">2.</span> <span class="nav-text">62. Unique Paths</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#64-Minimum-Path-Sum"><span class="nav-number">3.</span> <span class="nav-text">64. Minimum Path Sum</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#70-Climbing-Stairs"><span class="nav-number">4.</span> <span class="nav-text">70. Climbing Stairs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#72-Edit-Distance"><span class="nav-number">5.</span> <span class="nav-text">72. Edit Distance</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#75-Sort-Colors"><span class="nav-number">6.</span> <span class="nav-text">75. Sort Colors</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#76-Minimum-Window-Substring"><span class="nav-number">7.</span> <span class="nav-text">76. Minimum Window Substring</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#78-Subsets"><span class="nav-number">8.</span> <span class="nav-text">78. Subsets</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#79-Word-Search"><span class="nav-number">9.</span> <span class="nav-text">79. Word Search</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#84-Largest-Rectangle-in-Histogram"><span class="nav-number">10.</span> <span class="nav-text">84. Largest Rectangle in Histogram</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -376,6 +427,26 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2020/10/14/Leetcode-20-10-16/";
+    this.page.identifier = "2020/10/14/Leetcode-20-10-16/";
+    this.page.title = "Leetcode 20/10/16";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://Alice-182.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
 </script>
 
 </body>
